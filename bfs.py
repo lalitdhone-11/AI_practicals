@@ -11,6 +11,7 @@ q=deque(['A'])
 def bfs(vis,q,g):
     if not q:
         return
+     
     curr=q.popleft()
     print(curr,end=" ")
     for c in g[curr]:

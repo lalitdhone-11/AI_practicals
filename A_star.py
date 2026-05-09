@@ -2,7 +2,7 @@ import heapq
 
 def a_star(graph, heuristics, start, goal):
     open_set = []
-    heapq.heappush(open_set, (0, start))
+    heapq.heappush(open_set, (0+heuristics[start], start))
 
     came_from = {}
     g_score = {node: float('inf') for node in graph}
